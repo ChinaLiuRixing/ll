@@ -1,0 +1,428 @@
+#header {
+    width: 80%;
+    margin: 30px auto;
+    backface-visibility: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo {
+    font-size: 50px;
+    color: rgb(0, 51, 104)
+}
+
+#header .right {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#header .right a {
+    text-decoration: none;
+    color: #999;
+    margin: 0 10px;
+}
+
+#header .right input {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+
+#header .right img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    padding: 0 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    background: -webkit-linear-gradient(rgb(21, 68, 116), rgb(129, 154, 181));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgb(21, 68, 116), rgb(129, 154, 181));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgb(21, 68, 116), rgb(129, 154, 181));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgb(21, 68, 116), rgb(129, 154, 181));
+    /* 标准的语法 */
+}
+
+.nav .item {
+    width: 100px;
+    line-height: 50px;
+    color: #fff;
+    margin: 0 20px;
+    text-align: center;
+}
+
+
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.content .left {
+    width: 70%;
+   height: 600px;
+
+}
+.welcome{
+	background: -webkit-linear-gradient(rgb(255, 135, 8), rgb(255, 207, 167));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgb(255, 135, 8), rgb(255, 207, 167));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgb(255, 135, 8), rgb(255, 207, 167));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgb(255, 135, 8), rgb(255, 207, 167));
+    /* 标准的语法 */
+   line-height: 200px;
+   font-size: 100px;
+   color: #FFFFFF;
+   height: 600px;
+   text-align: center;
+   padding:0 100px;
+   
+}
+.content .left img {
+    width: 50%;
+    height: 600px;
+
+}
+
+.content .right {
+    width: 400px;
+    margin: 100px;
+    border: 1px solid #ccc;
+    position: relative;
+
+}
+
+.content .right .title {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #999;
+}
+.content .right .item{
+	width: 100%;
+	padding: 15px 0;
+	display: flex;
+
+	flex-wrap: nowrap;
+	position: relative;
+}
+.content .right .item .intro{
+	flex-grow: 1;
+	text-align: center;
+}
+.content .right .item input{
+	flex-grow: 5;
+	margin-right: 15px;
+}
+.content .right .item img{
+	width: 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.content .right .sub{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.content .right .sub .login{
+	padding: 5px 20px;
+	background: rgb(254,122,2);
+	color: #FFFFFF;
+	border: 1px solid orangered;
+}
+.content .right .sub .forget{
+	padding: 5px;
+	margin-left: 5px;
+	border-left: 1px solid #CCCCCC;
+}
+.content .right .register{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background-color: rgb(240,240,240);
+}
+.content .right .register .res{
+	width: 60%;
+	margin: 10px auto;
+	padding: 10px 50px;
+	font-weight: 700;
+	background: rgb(244,244,242);
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.footer{
+	width: 100%;
+	height: 300px;
+	background: rgb(246,246,246);
+	text-align: center;
+	line-height: 460px;
+	font-size: 25px;
+}
+ 
+
+.content .uploadContainer{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.content .uploadContainer .input{
+	width: 300px;
+	margin:0 50px;
+}
+.content .uploadContainer .input .tt{
+	color:red;
+	line-height: 50px;
+}
+.content .uploadContainer .input input{
+	width: 100%;
+}
+.content .uploadContainer .btns{
+	width: 150px;
+}
+.content .uploadContainer .btns .item{
+	background: rgb(254,127,0);
+	padding: 10px 20px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.tips{
+	font-size: 30px;
+	font-weight: 700;
+	width: 50%;
+	line-height: 80px;
+	margin: 30px auto;
+}
+.tips .sp{
+	text-indent: 90px;
+}
+
+.table{
+	width: 80%;
+	margin: 30px auto;
+}
+.table .title{
+	font-size: 30px;
+}
+.table .mytable th{
+	padding: 15px 100px;
+	font-size: 20px;
+	border-left: 2px solid #fff;
+	color: #fff;
+	background: -webkit-linear-gradient(rgb(0, 50, 108), rgb(99, 111, 125));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(rgb(0, 50, 108), rgb(99, 111, 125));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(rgb(0, 50, 108), rgb(99, 111, 125));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(rgb(0, 50, 108), rgb(99, 111, 125));
+}
+.table .mytable td{
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+
+}
+/**
+ * <div class="basic">
+		<div class="title">基本信息（<span>必填</span>）</div>
+		<div class="basicForm">
+			<div class="item">
+				<div class="title">用户名：</div>
+				<input type="text" name="" id="" value="" />
+			</div>
+		</div>
+		<div class="btn">同意并提交</div>
+		
+    </div>
+ */
+.basic{
+	width: 80%;
+	margin: 0 auto;
+}
+.basic .ntitle{
+	height: 50px;
+	line-height: 50px;
+	font-weight: 700;
+	border-bottom: 1px solid #cccccc;
+}
+.basic .ntitle span{
+	color: red;
+}
+.basicForm{
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.basicForm .item{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	font-size: 20px;
+	margin: 20px;
+}
+.basicForm .item .title{
+	width: 150px;
+	text-align: right;
+}
+.basicForm .item input{
+	width: 300px;
+}
+.basicForm .item select{
+	width: 150px;
+}
+.basic .btn{
+	padding: 10px 50px;
+	background: rgb(254,127,0);
+	color: #fff;
+	font-size: 20px;
+	border: 1px solid orangered;
+	margin: 100px auto;
+	width: 100px;
+	
+}
+.mbtn{
+	padding: 10px 50px;
+	background: rgb(254,127,0);
+	color: #fff;
+	font-size: 20px;
+	border: 1px solid orangered;
+}
+.btnScontainer{
+	margin: 100px auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+/*<div class="btn setPass">修改密码</div>
+		<di
+		v class="btn setbasic">个人信息修改</div>*/
+		
+.three{
+	width: 80%;
+	margin: 0 auto;
+}
+.three .ntitle{
+	height: 50px;
+	line-height: 50px;
+	font-weight: 700;
+	border-bottom: 1px solid #cccccc;
+}
+.three .container{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.three .container .item3{
+	/*display: inline-block;*/
+	width: 33%;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+}
+.three .container .item3 .title3{
+	width: 100%;
+	padding-top: 30px;
+	margin:30px auto 20px;
+	text-align: center;
+}
+.three .container .item3 .believe{
+	width: 80%;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+}
+.three .container .item3 .think{
+	display: inline-block;
+	margin-left: 150px;
+}
+.three .container .item3 .thinkbtn{
+	display: inline-block;
+	padding: 5px 10px;
+	background: rgb(254,127,0);
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid orangered;
+}
+.three .container .item3 .bitem{
+	width: 100%;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.three .container .item3 .bitem .bstart{
+	width: 40%;
+	text-align: end;
+}
+.three .container .item3 .bitem .bend{
+	width: 55%;
+}
+.three .container .item3 .bbbtns{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.three .container .item3 .bbbtns .btn{
+	margin: 50px 10px;
+	padding: 5px 50px;
+	background: rgb(254,127,0);
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid orangered;
+	text-align: center;
+}
+/*<div class="bbbtns">
+					<div class="btn">修改密码</div>
+					<div class="btn">个人信息修改</div>
+				</div>*/
+				
+
+.basic .sim{
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	margin: 15px;
+	color:blue;
+}
+.basic .sim2{
+	text-decoration: none;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	margin: 15px;
+	color:blue;
+}
+.basic .sim2 .title{
+	width: 80%;
+}
+.basic .sim2 .time{
+	width: 15%
+}
