@@ -54,6 +54,20 @@
     <div class="footer">
     	地址：大连理工大学区块链实验室
     </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".login").click(function(){
+                alert(1)
+                $.get("http://127.0.0.1:8888/login",{
+                    username:"test",
+                    password:"test"
+                },function(data,status){
+                    console.log("数据: " + data + "\n状态: " + status);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
