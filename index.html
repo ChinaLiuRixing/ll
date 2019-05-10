@@ -59,12 +59,25 @@
         $(document).ready(function(){
             $(".login").click(function(){
                 alert(1)
-                $.get("http://127.0.0.1:8888/login",{
-                    username:"test",
-                    password:"test"
-                },function(data,status){
-                    console.log("数据: " + data + "\n状态: " + status);
-                });
+                $.ajax({
+                    type:"POST",
+                    url:"http://127.0.0.1:8888/login",
+                    data:{
+                        username:"test",
+                        password:"test"
+                    },
+                    success:function(res){
+                        console.log(res)
+                    },
+                    contentType:"application/json"
+
+                })
+                // $.get("http://127.0.0.1:8888/login",{
+                //     username:"test",
+                //     password:"test"
+                // },function(data,status){
+                //     console.log("数据: " + data + "\n状态: " + status);
+                // });
             });
         });
     </script>
